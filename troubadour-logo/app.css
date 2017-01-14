@@ -1,0 +1,91 @@
+html, body {
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.animation {
+  height: 50%;
+  width: 50%;
+  position: relative;
+	margin: 0 auto;
+  
+}
+
+#city {
+  fill: black;
+  fill-opacity: 0;
+  stroke: rgb(193, 140, 39);
+  stroke-dasharray: 243 1643;
+  stroke-dashoffset: -1200;
+  stroke-width: 5px;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s, fill-opacity 1.5s;
+}
+
+.animation:hover #city,
+.animation.hover_effect #city{
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1643;
+  fill-opacity: 1;
+}
+
+
+#window_big {
+  fill-opacity: 1;
+  transform-origin: 253px 114px;
+  transform: scale(1, 1);
+  transition: transform 1.5s;
+}
+
+.animation:hover #window_big,
+.animation.hover_effect #window_big {
+  transform-origin: 253px 114px;
+  transform: scale(.25, .25);
+}
+
+.animation:hover #window_small,
+.animation.hover_effect #window_small{
+  fill-opacity: 1;
+}
+
+#window_small {
+   fill-opacity: 0;
+   transition: fill-opacity 3s .5s;
+}
+
+.window_glare {
+  fill: orange;
+}
+
+.window_pane {
+  fill: rgb(193, 140, 39);
+}
+
+
+#troubadour {
+  stroke-width 0px;
+  stroke: rgb(193, 140, 39);
+  stroke-dasharray: 364;
+  stroke-dashoffset: -364;
+  fill: black;
+  transition: fill .8s .6s, stroke-dashoffset 1s, stroke-dasharray 1s;
+
+}
+
+.animation:hover #troubadour,
+.animation.hover_effect #troubadour {
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  fill: white;
+}
+
+#hostel {
+  fill: black;
+  transition: fill .8s .6s
+}
+
+.animation:hover #hostel,
+.animation.hover_effect #hostel{
+  fill: white;
+}
