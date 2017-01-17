@@ -1,0 +1,115 @@
+.techno {
+  width: 75%;
+  height: 75%;
+  background: transparent;
+}
+
+.techno_letters {
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 315;
+  stroke-dashoffset: 315;
+  -webkit-animation: dash 3s 2s linear forwards;
+          animation: dash 3s 2s linear forwards;
+}
+
+#techno_arm {
+  -webkit-transform-origin: 586px 322px;
+          transform-origin: 586px 322px;
+  #transform: rotate(30deg);
+  -webkit-animation: boom-arm 3s ease forwards;
+          animation: boom-arm 3s ease forwards;
+}
+
+#techno_arm_small {
+  -webkit-transform-origin: 586px 322px;
+          transform-origin: 586px 322px;
+  -webkit-animation: boom-small 6s ease forwards;
+          animation: boom-small 6s ease forwards;
+}
+
+#techno_arm_med {
+  -webkit-transform-origin: 586px 322px;
+          transform-origin: 586px 322px;
+  -webkit-animation: boom-med 6s ease forwards;
+          animation: boom-med 6s ease forwards;
+}
+
+#techno_head {
+  -webkit-transform-origin: 586px 322px;
+          transform-origin: 586px 322px;
+  -webkit-animation: boom-head 6s ease forwards;
+          animation: boom-head 6s ease forwards;
+}
+
+.techno_steel {
+  fill: #FFFFFF;
+}
+
+.techno_tire {
+  fill: 191919;
+}
+
+@-webkit-keyframes boom-med {
+   0% {-webkit-transform: rotate(30deg) translateX(-50%);transform: rotate(30deg) translateX(-50%);}
+   50% {-webkit-transform: rotate(0deg) translateX(0%);transform: rotate(0deg) translateX(0%);}
+   75% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
+   100% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
+}
+
+@keyframes boom-med {
+   0% {-webkit-transform: rotate(30deg) translateX(-50%);transform: rotate(30deg) translateX(-50%);}
+   50% {-webkit-transform: rotate(0deg) translateX(0%);transform: rotate(0deg) translateX(0%);}
+   75% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
+   100% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
+}
+
+@-webkit-keyframes boom-small {
+   0% {-webkit-transform: rotate(30deg) translateX(-50%);transform: rotate(30deg) translateX(-50%);}
+   50% {-webkit-transform: rotate(0deg) translateX(-0%);transform: rotate(0deg) translateX(-0%);}
+   75% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
+   100% {-webkit-transform: rotate(0deg) translateX(-50%);transform: rotate(0deg) translateX(-50%);}
+}
+
+@keyframes boom-small {
+   0% {-webkit-transform: rotate(30deg) translateX(-50%);transform: rotate(30deg) translateX(-50%);}
+   50% {-webkit-transform: rotate(0deg) translateX(-0%);transform: rotate(0deg) translateX(-0%);}
+   75% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
+   100% {-webkit-transform: rotate(0deg) translateX(-50%);transform: rotate(0deg) translateX(-50%);}
+}
+
+@-webkit-keyframes boom-head {
+    0% {-webkit-transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);}
+    50% {-webkit-transform:rotate(0deg) translate(0%) rotate(0deg);transform:rotate(0deg) translate(0%) rotate(0deg);}
+    75% {-webkit-transform: translate(-275%);transform: translate(-275%);}
+    100% {-webkit-transform: translate(-565%);transform: translate(-565%);}
+}
+
+@keyframes boom-head {
+    0% {-webkit-transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);}
+    50% {-webkit-transform:rotate(0deg) translate(0%) rotate(0deg);transform:rotate(0deg) translate(0%) rotate(0deg);}
+    75% {-webkit-transform: translate(-275%);transform: translate(-275%);}
+    100% {-webkit-transform: translate(-565%);transform: translate(-565%);}
+}
+
+@-webkit-keyframes boom-arm {
+    0% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+    100% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+
+@keyframes boom-arm {
+    0% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+    100% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+
+@-webkit-keyframes dash {
+  0% { stroke-dashoffset: 315; fill: red; fill-opacity: 0;}
+  50% { fill: red; fill-opacity: 0;}
+  100% { stroke-dashoffset: 0; fill: red; fill-opacity: 1; }
+}
+
+@keyframes dash {
+  0% { stroke-dashoffset: 315; fill: red; fill-opacity: 0;}
+  50% { fill: red; fill-opacity: 0;}
+  100% { stroke-dashoffset: 0; fill: red; fill-opacity: 1; }
+}
