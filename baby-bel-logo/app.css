@@ -1,5 +1,8 @@
 body {
-  background: light-gray;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9ecdc;
 }
 
 nav {

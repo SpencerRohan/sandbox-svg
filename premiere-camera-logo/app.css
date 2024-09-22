@@ -16,7 +16,7 @@
 #techno_arm {
   -webkit-transform-origin: 586px 322px;
           transform-origin: 586px 322px;
-  #transform: rotate(30deg);
+  transform: rotate(30deg);
   -webkit-animation: boom-arm 3s ease forwards;
           animation: boom-arm 3s ease forwards;
 }
@@ -51,14 +51,14 @@
 }
 
 @-webkit-keyframes boom-med {
-   0% {-webkit-transform: rotate(30deg) translateX(-50%);transform: rotate(30deg) translateX(-50%);}
+   0% {-webkit-transform: rotate(30deg) translateX(-40%);transform: rotate(30deg) translateX(-40%);}
    50% {-webkit-transform: rotate(0deg) translateX(0%);transform: rotate(0deg) translateX(0%);}
    75% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
    100% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
 }
 
 @keyframes boom-med {
-   0% {-webkit-transform: rotate(30deg) translateX(-50%);transform: rotate(30deg) translateX(-50%);}
+   0% {-webkit-transform: rotate(30deg) translateX(-40%);transform: rotate(30deg) translateX(-40%);}
    50% {-webkit-transform: rotate(0deg) translateX(0%);transform: rotate(0deg) translateX(0%);}
    75% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
    100% {-webkit-transform: rotate(0deg) translateX(-25%);transform: rotate(0deg) translateX(-25%);}
@@ -78,18 +78,22 @@
    100% {-webkit-transform: rotate(0deg) translateX(-50%);transform: rotate(0deg) translateX(-50%);}
 }
 
-@-webkit-keyframes boom-head {
+/* @-webkit-keyframes boom-head {
     0% {-webkit-transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);}
     50% {-webkit-transform:rotate(0deg) translate(0%) rotate(0deg);transform:rotate(0deg) translate(0%) rotate(0deg);}
     75% {-webkit-transform: translate(-275%);transform: translate(-275%);}
     100% {-webkit-transform: translate(-565%);transform: translate(-565%);}
-}
+} */
 
 @keyframes boom-head {
-    0% {-webkit-transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);transform: rotate(30deg) translate(-600%, -130%) rotate(-30deg);}
+  0% {-webkit-transform: rotate(30deg) translate(-56.5%, -26%) rotate(-30deg);transform: rotate(30deg) translate(-56.5%, -26%) rotate(-30deg);}
+ 
+  45% {-webkit-transform:rotate(0deg) translate(0%) rotate(0deg);transform:rotate(0deg) translate(0%) rotate(0deg);}
     50% {-webkit-transform:rotate(0deg) translate(0%) rotate(0deg);transform:rotate(0deg) translate(0%) rotate(0deg);}
-    75% {-webkit-transform: translate(-275%);transform: translate(-275%);}
-    100% {-webkit-transform: translate(-565%);transform: translate(-565%);}
+    75% {-webkit-transform: translate(-25%);transform: translate(-25%);}
+    100% {-webkit-transform: translate(-50%);transform: translate(-50%);}
+    /* 75% {-webkit-transform: translate(-275%);transform: translate(-275%);}
+    100% {-webkit-transform: translate(-565%);transform: translate(-565%);} */
 }
 
 @-webkit-keyframes boom-arm {
